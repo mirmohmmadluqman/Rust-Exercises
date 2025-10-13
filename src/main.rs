@@ -171,11 +171,11 @@
     // }
 
 
-
+    // Enum
     enum Command {
         Play,
         Stop,
         Skip(u32),
         Back(u32),
-        Resize {width: u32, }
+        Resize {width: u32, height: u32}
     }

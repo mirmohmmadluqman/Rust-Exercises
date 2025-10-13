@@ -32,7 +32,6 @@ This repository contains all exercises and notes for the Rust Crash Course. Each
 - [Tuple](./topics/tuple/README.md) - Done
 - [Array](./topics/array/README.md) - Done
 - [`String` and `&str`](./topics/string/README.md) - Done
-- [Enum](./topics/enum_type/README.md) - Done
 - [Struct](./topics/struct_type/README.md)
 - [Vector](./topics/vector/README.md)
 - [Hash map](./topics/hash_map/README.md)
