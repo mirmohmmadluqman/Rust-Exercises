@@ -1,5 +1,5 @@
     #![allow(unused)]
-
+    #[derive(Debug, PartialEq)]
 
 
     // This will panic at runtime, because of overflow and say Too much!
@@ -171,11 +171,49 @@
     // }
 
 
-    // Enum
-    enum Command {
-        Play,
-        Stop,
-        Skip(u32),
-        Back(u32),
-        Resize {width: u32, height: u32}
-    }
+
+
+    // // Enum in Rust
+    // enum Command {
+    //     Play,
+    //     Stop,
+    //     Skip(u32),
+    //     Back(u32),
+    //     Resize {width: u32, height: u32}
+    // }
+    //
+    //
+    // fn main() {
+    //     println!("---------------------------------------------------------------------------");
+    //     println!("Enum in Rust:");
+    //
+    //     let cmd: Command = Command::Play;
+    //         println!("{:?}", cmd);
+    //     let cmd: Command = Command::Skip(10);
+    //         println!("{:?}", cmd);
+    //     let cmd: Command = Command::Resize {width: 100, height: 50}; // We can't say Command::Resize(100, 50), it will give error and we do this in tuple! 
+    //         println!("{:?}", cmd);
+    //
+    //     let cmd0: Command = Command::Play;
+    //     let cmd1: Command = Command::Skip(10);
+    //     println!("Is `cmd0` equal to `cmd1`: {:?}", cmd0 == cmd1);
+    //
+    //     // Option<T> = some(T) | none {{{Revis it later #revise1553 #bookmark1553 #revise #bookmark}}}
+    //     let x: Option<i32> = Some(10);
+    //     println!("Is `x` equal to `Some(10)`: {:?}", x == Some(10));
+    //     let x: Option<i32> = None;
+    //     println!("Is `x` equal to `None`: {:?}", x == None);
+    //
+    //     // Result<T, E> = Ok(T) | Err(E) {{{Revis it later #revise1553 #bookmark1553 #revise #bookmark}}}
+    //     // "100" -> 100
+    //     let x: Result<i32, String> = Ok(200);
+    //     // ... Just revise it later || @1553x
+    //
+    //
+    //     println!("---------------------------------------------------------------------------");
+    // }
+
+
+
+
+    
