@@ -1,5 +1,5 @@
     #![allow(unused)]
-    #[derive(Debug, PartialEq)]
+    #[derive(Debug/*, PartialEq */)]
 
 
     // This will panic at runtime, because of overflow and say Too much!
@@ -216,4 +216,67 @@
 
 
 
-    
+    // Struct in Rust
+    // Struct
+    struct Point{
+        x: i32,
+        y: i32,
+    }   
+
+    struct Point3D(i32, i32, i32); // Tuple Struct
+
+    struct Empty; // Empty Struct
+
+    #[derive(Debug)]
+    struct Circle{
+        radius: u32,
+        center: Point,
+    }
+
+    fn main() {
+        println!("---------------------------------------------------------------------------");
+        println!("Struct in Rust:");
+
+        let p = Point {x: 1, y: 1};
+        println!("  Point p is at: ({:?})", p);
+
+        println!("  When we print them as _._(p.x): {} {}", p.x, p.y);
+
+        let p = Point3D(-1, 1, 0);
+        println!("  This is how we print Tuple Struct, ");
+        println!("      Point3D: ({}, {}, {})", p.0, p.1, p.2);
+
+        let empty = Empty;
+        
+        let circle = Circle {
+            radius: 10,
+            center: Point { // It is same as `center: Point {x: 0, y: 0},`
+                x: 0, 
+                y: 0},
+        };
+        println!("  Normal Debug Method: {:?}", circle);
+        println!("  Debug with #: {:#?}", circle);
+
+        // Shorcut
+        let x: i32 = 1;
+        let y: i32 = 1;
+        let p = Point {x: x, y: y}; // When variable name is same we can do this like x, y
+        println!("  Shortcut when variable and field name are same: ({:?})", p);
+        let p = Point {x, y};
+        println!("  Shortcut when variable and field name are same: ({:?})", p);
+        
+        // Copy fields
+        let p0 = Point{x: 0, y: 0};
+        let p1 = Point{x: 1, y: p0.y}; // 1 way to copy field
+        let p2 = Point{y: 2, ..p0};     // another way to copy field
+        println!("  {:?}", p2);
+
+        // update
+        let mut p = Point{x: 0, y: 0};
+        p.x += 1;
+        println!("  Update point: {:?}", p);
+
+
+        println!("---------------------------------------------------------------------------");
+    }
+
