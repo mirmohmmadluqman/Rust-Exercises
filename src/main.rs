@@ -1,5 +1,5 @@
     #![allow(unused)]
-    #[derive(Debug/*, PartialEq */)]
+    // #[derive(Debug/*, PartialEq */)]
 
 
     // This will panic at runtime, because of overflow and say Too much!
@@ -26,8 +26,8 @@
     // }
 
 
-
-    // fn return_many() ->(u32, bool) {
+    // Tuples in Rust ___________________________________________________________________________________________________________
+    // fn return_many() ->(u32, bool) { 
     //     (1u32, true)
     // } 
     //
@@ -73,7 +73,7 @@
     // }
 
 
-    // // Arrays in Rust
+    // // Arrays in Rust    ___________________________________________________________________________________________________________
     // fn main() {
     //     println!("--------------------------------------------------------------------------");
     //
@@ -112,7 +112,7 @@
 
 
 
-    // Slices in Rust
+    // Slices in Rust ___________________________________________________________________________________________________________
     // fn sum_numbers(nums: &[i32]) -> i32 {
     // nums.iter().sum() // Sum all numbers in the slice
     // }
@@ -138,7 +138,7 @@
 
 
 
-    // // String:
+    // // String: in Rust _____________________________________________________________________________________________________________
     //
     // fn main() {
     //     println!("--------------------------------------------------------------------------");
@@ -173,7 +173,7 @@
 
 
 
-    // // Enum in Rust
+    // // Enum in Rust _____________________________________________________________________________________________________________
     // enum Command {
     //     Play,
     //     Stop,
@@ -216,7 +216,7 @@
 
 
 
-    // Struct in Rust
+    /* // Struct in Rust _____________________________________________________________________________________________________________
     // Struct
     struct Point{
         x: i32,
@@ -278,5 +278,35 @@
 
 
         println!("---------------------------------------------------------------------------");
-    }
+    } */
 
+    // 
+
+    // Vector in Rust _____________________________________________________________________________________________________________
+    fn main() {
+        let mut v: Vec<i32> = Vec::new();
+        v.push(1);
+        v.push(2);
+        v.push(3);
+        println!("Vector v is now: {:?}", v);
+    
+        let v = vec![1, 3, 3];
+
+        // Option<&i8>
+        // Index valid => Some(&val)
+        // Index invalid => None
+        println!("v[1] is: {:?}", v.get(1)); // Some(&3)
+        println!("v[10] is: {:?}", v.get(10)); // None, so func will not panic
+
+
+        // Exercise Testing
+        let x: u32 = 10;
+        let y = x;
+        let z = x;
+
+        let mut tensor: Vec<u32> = Vec::new();
+        tensor.push(x); // or vec![x, y, z]
+        tensor.push(y);
+        tensor.push(z);
+        println!("Tensor is now: {:?}", tensor);
+    } 

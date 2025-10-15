@@ -10,3 +10,6 @@ pub fn new(address: String) -> Account {
         balance: 0,
     }
 }
+
+
+/*                Done            (already ???) */

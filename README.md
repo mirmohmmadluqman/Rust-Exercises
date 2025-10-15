@@ -33,8 +33,8 @@ This repository contains all exercises and notes for the Rust Crash Course. Each
 - [Array](./topics/array/README.md) - Done
 - [`String` and `&str`](./topics/string/README.md) - Done
 - [Enum](./topics/enum_type/README.md) - Done
-- [Struct](./topics/struct_type/README.md)
-- [Vector](./topics/vector/README.md)
+- [Struct](./topics/struct_type/README.md) - Done
+- [Vector](./topics/vector/README.md) 
 - [Hash map](./topics/hash_map/README.md)
 
 # Control Flow
