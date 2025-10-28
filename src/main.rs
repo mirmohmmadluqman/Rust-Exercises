@@ -283,30 +283,39 @@
     // 
 
     // Vector in Rust _____________________________________________________________________________________________________________
-    fn main() {
-        let mut v: Vec<i32> = Vec::new();
-        v.push(1);
-        v.push(2);
-        v.push(3);
-        println!("Vector v is now: {:?}", v);
+    // fn main() {
+    //     let mut v: Vec<i32> = Vec::new();
+    //     v.push(1);
+    //     v.push(2);
+    //     v.push(3);
+    //     println!("Vector v is now: {:?}", v);
     
-        let v = vec![1, 3, 3];
+    //     let v = vec![1, 3, 3];
 
-        // Option<&i8>
-        // Index valid => Some(&val)
-        // Index invalid => None
-        println!("v[1] is: {:?}", v.get(1)); // Some(&3)
-        println!("v[10] is: {:?}", v.get(10)); // None, so func will not panic
+    //     // Option<&i8>
+    //     // Index valid => Some(&val)
+    //     // Index invalid => None
+    //     println!("v[1] is: {:?}", v.get(1)); // Some(&3)
+    //     println!("v[10] is: {:?}", v.get(10)); // None, so func will not panic
 
 
-        // Exercise Testing
-        let x: u32 = 10;
-        let y = x;
-        let z = x;
+    //     // Exercise Testing
+    //     let x: u32 = 10;
+    //     let y = x;
+    //     let z = x;
 
-            let mut tensor: Vec<u32> = Vec::new();
-            tensor.push(x); // or vec![x, y, z]
-            tensor.push(y);
-            tensor.push(z);
-        println!("Tensor is now: {:?}", tensor);
-    } 
+    //         let mut tensor: Vec<u32> = Vec::new();
+    //         tensor.push(x); // or vec![x, y, z]
+    //         tensor.push(y);
+    //         tensor.push(z);
+    //     println!("Tensor is now: {:?}", tensor);
+    // } 
+
+
+
+
+
+
+
+
+    
