@@ -304,9 +304,9 @@
         let y = x;
         let z = x;
 
-        let mut tensor: Vec<u32> = Vec::new();
-        tensor.push(x); // or vec![x, y, z]
-        tensor.push(y);
-        tensor.push(z);
+            let mut tensor: Vec<u32> = Vec::new();
+            tensor.push(x); // or vec![x, y, z]
+            tensor.push(y);
+            tensor.push(z);
         println!("Tensor is now: {:?}", tensor);
     } 
