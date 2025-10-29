@@ -1,3 +1,6 @@
+/*   ------------------                          Hash Map                          ------------------   * /
+
+
 #![allow(unused)]
 
 use std::collections::HashMap;
@@ -40,4 +43,28 @@ fn main() {
 
 
 
+} */
+
+/*   ------------------                          If else                           ------------------   */
+
+#![allow(unused)]
+
+fn main() {
+    let mut x: i32 = 0;
+
+    let error_detected: &str = "Your code is changed, broken or has any logical error(flaw).";
+
+    let onlyowner: i32 = if x >=     0 {
+        println!("x is positive");
+        x 
+    } else if x < -1 {
+        x = -10;
+        println!("x is now negative");
+        x 
+    } else {
+        println!("{}", error_detected);
+        error_detected.len() as i32
+    };
+
+    println!("onlyowner = {}", onlyowner);
 }
