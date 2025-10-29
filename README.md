@@ -34,9 +34,8 @@ This repository contains all exercises and notes for the Rust Crash Course. Each
 - [`String` and `&str`](./topics/string/README.md) - Done
 - [Enum](./topics/enum_type/README.md) - Done
 - [Struct](./topics/struct_type/README.md) - Done
-- [Vector](./topics/vector/README.md) 
-- [Hash map](./topics/hash_map/README.md)
-
+- [Vector](./topics/vector/README.md) - Done
+- [Hash map](./topics/hash_map/README.md) - Done
 # Control Flow
 
 - [If / else](./topics/if_else/README.md)
