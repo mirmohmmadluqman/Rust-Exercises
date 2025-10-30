@@ -38,8 +38,8 @@ This repository contains all exercises and notes for the Rust Crash Course. Each
 - [Hash map](./topics/hash_map/README.md) - Done
 # Control Flow
 
-- [If / else](./topics/if_else/README.md)
-- [Loop](./topics/for_loop/README.md)
+- [If / else](./topics/if_else/README.md) - Done
+- [Loop](./topics/for_loop/README.md) - Done
 - [Match](./topics/pattern_match/README.md)
 - [If let](./topics/if_let/README.md)
 

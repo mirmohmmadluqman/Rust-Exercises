@@ -1,70 +1,161 @@
-/*   ------------------                          Hash Map                          ------------------   * /
+// #![allow(unused)]
+
+// fn main() {
+//     loop {
+//         println!("Logop");
+//                 println!("Loopx");
+//                 println!("Loxgop");
+//                 println!("Loodp");
+//                 println!("Lcoop");
+//                 println!("Lofop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Lolop");
+//                 println!("Laoop");
+//                 println!("Lopop");
+//                 println!("Lofop");
+//                 println!("Loop");
+//                 println!("Lofop");
+//                 println!("Locop");
+//                 println!("Lboop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Lo2op");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Lo3op");
+//                 println!("Ltoop");
+//                                 println!("Lo321op");
+//                 println!("Ltoop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loeop");
+//                 println!("Lo2dop");
+//                 println!("Lodop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Looa21p");
+//                 println!("Loogp");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("L21ooup");
+//                 println!("Loeop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("L21odop");
+//                 println!("Lodop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Looap");
+//                 println!("Loogp");
+//                 println!("Looup");
+//                                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Louop");
+//                 println!("Loiop");
+//                 println!("Lo21op");
+//                 println!("Lotop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");                println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loop");
+//                 println!("Loqop");
+//                 println!("Loqop");
+        
+//     }
+// }
 
 
 #![allow(unused)]
 
-use std::collections::HashMap;
-
 fn main() {
-    let mut scores: HashMap<String, i32> = HashMap::new();
-    scores.insert("red".to_string(), 10);
-    scores.insert("blue".to_string(), 50);
-    println!("{:#?}", scores);
-    println!("------------------------- Get:");
-    
+    println!(" ");
+    let mut i = 0;
 
-    // Get
-    let score: Option<&i32> = scores.get("red");
-    println!("Red Score: {:?}", score);
-    println!("------------------------- Update:");
+    println!("-------Loop directly; working on break ---------");
+    loop {
+        i += 1;
+        println!("i = {}", i);
+        if i > 5{
+            break;
+        }
+    }
 
-    // Update
-    let score: &mut i32 = scores.entry("black".to_string()).or_insert(0);
-    *score += 25;   // *score: Dereferences the mutable reference to access the actual value (0).
+    println!("------------------While loop -------------------");
+    let mut i = 0;
+    while i <= 5{
+        i += 1;
+        println!("i = {}", i);
+    }
 
-    let score: Option<&i32> = scores.get("black");
-    println!("Black Score: {:?}", score);
-    
-
-    println!("--------------------------------------------------------------------------------------");
-
-    let mut scorestype2: HashMap<i32, &str> = HashMap::new();
-    scorestype2.insert( 1231, "Red");
-    scorestype2.insert( 9843, "Blue");
-    println!("{:#?}", scorestype2);
-    println!("---");
-
-    // Get
-    scorestype2.get(&1);
-    println!("{:#?}", scorestype2.get(&1));
-    println!("---");
-    println!("{:#?}", scorestype2.get(&1231));
+    println!("------------------For loop -------------------"); 
+    let arr = [1, 2, 3, 4, 5];
+    let n: usize = arr.len();
+    for i in 0..n{ // Or instead use 0..=5, 0..6
+        println!("i = {}", arr[i]);
+    };  
 
 
+    println!("------------------For loop with enumerate -------------------");
+    let v = vec![1, 2, 3, 4, 5];
 
+    for m in 0..n{ // N = 5 ;  
+    println!("i = {}", arr[m]);
+    };  
 
-} */
+    println!("------------------For loop but .... -------------------");
+    for (i, value) in arr.iter().enumerate() {
+    println!("Index: {}, Value: {}", i, value);
+    }
 
-/*   ------------------                          If else                           ------------------   */
-
-#![allow(unused)]
-
-fn main() {
-    let mut x: i32 = 0;
-
-    let error_detected: &str = "Your code is changed, broken or has any logical error(flaw).";
-
-    let onlyowner: i32 = if x >=     0 {
-        println!("x is positive");
-        x 
-    } else if x < -1 {
-        x = -10;
-        println!("x is now negative");
-        x 
-    } else {
-        println!("{}", error_detected);
-        error_detected.len() as i32
-    };
-
-    println!("onlyowner = {}", onlyowner);
 }
