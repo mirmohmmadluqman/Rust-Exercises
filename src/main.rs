@@ -158,4 +158,25 @@ fn main() {
     println!("Index: {}, Value: {}", i, value);
     }
 
+
+
+    println!("------------------ Test -------------------");
+                        /* Code not working */
+    // let nums: Vec<i32> = vec![1, 2, 3, 4, 5];
+    // numms = 0;                      // ❌ Not declared (no let mut)
+    // loop {
+    //     nnums = nums.iter().sum()   // ❌ Missing semicolon + types mismatch
+    //     break;
+    // }
+    // println!("Sum = {}", nnums);    // ❌ nnums might not exist yet
+
+
+    let nums: Vec<i32> = vec![1, 2, 3, 4, 5];
+    let mut nnums: i32; // variable to store the sum
+    loop {
+        nnums = nums.iter().sum();
+        break; // stop after one run
+    }
+    println!("Sum = {}", nnums);
+
 }
