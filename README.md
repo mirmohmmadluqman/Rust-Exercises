@@ -1,12 +1,12 @@
 # Rust Crash Course
 
 <div align="center">
-
-[![Stargazers](https://img.shields.io/github/stars/mirmohmmadluqman/Rust-Book-Exercises.svg?style=for-the-badge)](https://github.com/mirmohmmadluqman/Rust-Book-Exercises/stargazers)
-[![Forks](https://img.shields.io/github/forks/mirmohmmadluqman/Rust-Book-Exercises.svg?style=for-the-badge)](https://github.com/mirmohmmadluqman/Rust-Book-Exercises/network/members)
-[![Contributors](https://img.shields.io/github/contributors/mirmohmmadluqman/Rust-Book-Exercises.svg?style=for-the-badge)](https://github.com/mirmohmmadluqman/Rust-Book-Exercises/graphs/contributors)
-[![Issues](https://img.shields.io/github/issues/mirmohmmadluqman/Rust-Book-Exercises.svg?style=for-the-badge)](https://github.com/mirmohmmadluqman/Rust-Book-Exercises/issues)
-[![License](https://img.shields.io/github/license/mirmohmmadluqman/Rust-Book-Exercises.svg?style=for-the-badge)](https://github.com/mirmohmmadluqman/Rust-Book-Exercises/blob/main/LICENSE)
+  
+[![Stargazers](https://img.shields.io/github/stars/mirmohmmadluqman/Rust-Exercises.svg?style=for-the-badge)](https://github.com/mirmohmmadluqman/Rust-Exercises/stargazers)
+[![Forks](https://img.shields.io/github/forks/mirmohmmadluqman/Rust-Exercises.svg?style=for-the-badge)](https://github.com/mirmohmmadluqman/Rust-Exercises/network/members)
+[![Contributors](https://img.shields.io/github/contributors/mirmohmmadluqman/Rust-Exercises.svg?style=for-the-badge)](https://github.com/mirmohmmadluqman/Rust-Exercises/graphs/contributors)
+[![Issues](https://img.shields.io/github/issues/mirmohmmadluqman/Rust-Exercises.svg?style=for-the-badge)](https://github.com/mirmohmmadluqman/Rust-Exercises/issues)
+[![License](https://img.shields.io/github/license/mirmohmmadluqman/Rust-Exercises.svg?style=for-the-badge)](https://github.com/mirmohmmadluqman/Rust-Exercises/blob/main/LICENSE)
 
 </div>
 
