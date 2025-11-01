@@ -40,8 +40,8 @@ This repository contains all exercises and notes for the Rust Crash Course. Each
 
 - [If / else](./topics/if_else/README.md) - Done
 - [Loop](./topics/for_loop/README.md) - Done
-- [Match](./topics/pattern_match/README.md)
-- [If let](./topics/if_let/README.md)
+- [Match](./topics/pattern_match/README.md) - Done
+- [If let](./topics/if_let/README.md) 
 
 # Ownership
 
