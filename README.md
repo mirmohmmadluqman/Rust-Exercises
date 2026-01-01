@@ -41,12 +41,11 @@ This repository contains all exercises and notes for the Rust Crash Course. Each
 - [If / else](./topics/if_else/README.md) - Done
 - [Loop](./topics/for_loop/README.md) - Done
 - [Match](./topics/pattern_match/README.md) - Done
-- [If let](./topics/if_let/README.md) 
-
+- [If let](./topics/if_let/README.md) - Done
 # Ownership
 
-- [Stack and heap](./topics/stack_heap/README.md)
-- [Ownership](./topics/ownership/README.md)
+- [Stack and heap](./topics/stack_heap/README.md) - Done
+- [Ownership](./topics/ownership/README.md) 
 - [Borrowing rules](./topics/borrowing_rules/README.md)
 
 # Error Handling
