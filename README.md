@@ -45,8 +45,8 @@ This repository contains all exercises and notes for the Rust Crash Course. Each
 # Ownership
 
 - [Stack and heap](./topics/stack_heap/README.md) - Done
-- [Ownership](./topics/ownership/README.md) 
-- [Borrowing rules](./topics/borrowing_rules/README.md)
+- [Ownership](./topics/ownership/README.md) - Done 
+- [Borrowing rules](./topics/borrowing_rules/README.md) - Done
 
 # Error Handling
 
